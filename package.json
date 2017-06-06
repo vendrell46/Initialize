@@ -1,0 +1,22 @@
+{
+  "name": "initialize",
+  "version": "1.0.1",
+  "description": "Generate a package",
+  "main": "index.js",
+  "bin": "./bin/initialize",
+  "scripts": {
+    "test": "node bin/initialize -d ./tmp",
+    "test:random": "node bin/initialize -d ./tmp/\"$RANDOM\"",
+    "clean": "rm -rf ./tmp",
+    "deps": "dependency-check . && dependency-check . --extra --no-dev"
+  },
+  "repository": "vendrell46/initialize",
+  "preferGlobal": true,
+  "license": "ISC",
+  "dependencies": {
+    "sample-apps": "^2.0.4",
+    "wd": "^1.2.0"
+  },
+  "devDependencies": {},
+  "author": "carlos"
+}
